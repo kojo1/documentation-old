@@ -1,85 +1,85 @@
 site_name: wolfSSL Manual
 site_url: https://wolfssl.com/
 docs_dir: build/html/
-site_dir: html-ja/
+site_dir: html-ja
 copyright: Copyright © 2022 wolfSSL Inc.
 nav:
-    - "1. Introduction": index.md
-    - "2. Building wolfSSL": chapter02.md
-    - "3. Getting Started": chapter03.md
-    - "4. Features": chapter04.md
-    - "5. Portability": chapter05.md
-    - "6. Callbacks": chapter06.md
-    - "7. Keys and Certificates": chapter07.md
-    - "8. Debugging": chapter08.md
-    - "9. Library Design": chapter09.md
-    - "10. wolfCrypt Usage Reference": chapter10.md
-    - "11. SSL Tutorial": chapter11.md
-    - "12. Best Practices for Embedded Devices": chapter12.md
-    - "13. OpenSSL Compatibility": chapter13.md
-    - "14. Licensing": chapter14.md
-    - "15. Support and Consulting": chapter15.md
-    - "16. wolfSSL Updates": chapter16.md
-    - "A. wolfSSL API Reference":
-      - "CertManager API": group__CertManager.md
-      - "Memory Handling": group__Memory.md
+    - "1. 序章": index.md
+    - "2. wolfSSLのビルド": chapter02.md
+    - "3. wolfSSL入門": chapter03.md
+    - "4. 機能": chapter04.md
+    - "5. ポータビリティ": chapter05.md
+    - "6. コールバク": chapter06.md
+    - "7. 鍵と証明書": chapter07.md
+    - "8. デバッグ": chapter08.md
+    - "9. ライブラリー設計方針": chapter09.md
+    - "10. wolfCrypt レファレンス": chapter10.md
+    - "11. SSLチュートリアル": chapter11.md
+    - "12. 組み込みシステムへの適用": chapter12.md
+    - "13. OpenSSL 互換": chapter13.md
+    - "14. ライセンス": chapter14.md
+    - "15. サポートとコンサルティング": chapter15.md
+    - "16. wolfSSLのアップデート": chapter16.md
+    - "A. wolfSSL API レファレンス":
+      - "証明書管理 API": group__CertManager.md
+      - "メモリー操作": group__Memory.md
       - "OpenSSL API": group__openSSL.md
-      - "wolfSSL Certificates and Keys": group__CertsKeys.md
-      - "wolfSSL Connection, Session, and I/O": group__IO.md
-      - "wolfSSL Context and Session Set Up": group__Setup.md
-      - "wolfSSL Error Handling and Reporting": group__Debug.md
-      - "wolfSSL Initialization/Shutdown": group__TLS.md
-    - "B. wolfCrypt API Reference":
+      - "wolfSSL 証明書と鍵": group__CertsKeys.md
+      - "wolfSSL 接続、セッション、ネットワークI/O": group__IO.md
+      - "wolfSSL コンテクストの設定": group__Setup.md
+      - "wolfSSL エラーの扱いとレポート": group__Debug.md
+      - "wolfSSL 初期化": group__TLS.md
+    - "B. wolfCrypt API レファレンス":
       - "ASN.1": group__ASN.md
-      - "Base Encoding": group__Base__Encoding.md
-      - "Compression": group__Compression.md
-      - "Error Reporting": group__Error.md
-      - "IoT-Safe Module": group__IoTSafe.md
-      - "Key and Cert Conversion": group__Keys.md
-      - "Logging": group__Logging.md
-      - "Math API": group__Math.md
-      - "Random Number Generation": group__Random.md
-      - "Signature API": group__Signature.md
-      - "wolfCrypt Init and Cleanup": group__wolfCrypt.md
-      - "Algorithms - 3DES": group__DES.md
-      - "Algorithms - AES": group__AES.md
-      - "Algorithms - ARC4": group__ARC4.md
-      - "Algorithms - BLAKE2": group__BLAKE2.md
-      - "Algorithms - Camellia": group__Camellia.md
-      - "Algorithms - ChaCha": group__ChaCha.md
-      - "Algorithms - ChaCha20_Poly1305": group__ChaCha20Poly1305.md
-      - "Callbacks - CryptoCb": group__Crypto.md
-      - "Algorithms - Curve25519": group__Curve25519.md
-      - "Algorithms - Curve448": group__Curve448.md
-      - "Algorithms - DSA": group__DSA.md
-      - "Algorithms - Diffie-Hellman": group__Diffie-Hellman.md
-      - "Algorithms - ECC": group__ECC.md
-      - "Algorithms - ED25519": group__ED25519.md
-      - "Algorithms - ED448": group__ED448.md
-      - "ECCSI API Reference":
-        - "Overview of ECCSI": group__ECCSI__Overview.md
-        - "Setup ECCSI Key": group__ECCSI__Setup.md
-        - "Operations for Signing and Verifying with ECCSI Key": group__ECCSI__Operations.md
-      - "SAKKE API Reference":
-        - "Overview of SAKKE Key": group__SAKKE__Overview.md
-        - "Setup SAKKE Key": group__SAKKE__Setup.md
-        - "Operations on/with SAKKE RSK": group__SAKKE__RSK.md
-        - "Operations using SAKKE Key": group__SAKKE__Operations.md
-      - "Algorithms - HMAC": group__HMAC.md
-      - "Algorithms - MD2": group__MD2.md
-      - "Algorithms - MD4": group__MD4.md
-      - "Algorithms - MD5": group__MD5.md
-      - "Algorithms - Password Based": group__Password.md
-      - "Algorithms - PKCS7": group__PKCS7.md
-      - "Algorithms - PKCS11": group__PKCS11.md
-      - "Algorithms - Poly1305": group__Poly1305.md
-      - "Algorithms - PSA": group__PSA.md
-      - "Algorithms - RIPEMD": group__RIPEMD.md
-      - "Algorithms - RSA": group__RSA.md
-      - "Algorithms - SHA 128/224/256/384/512": group__SHA.md
-      - "Algorithms - SipHash": group__SipHash.md
-      - "Algorithms - SRP": group__SRP.md
-    - "C. API Header Files":
+      - "ベースエンコード": group__Base__Encoding.md
+      - "圧縮": group__Compression.md
+      - "エラーレポート": group__Error.md
+      - "IoT-Safeモジュール": group__IoTSafe.md
+      - "鍵と証明書変換": group__Keys.md
+      - "ロギング": group__Logging.md
+      - "整数演算 API": group__Math.md
+      - "乱数生成": group__Random.md
+      - "署名 API": group__Signature.md
+      - "wolfCrypt 初期化とクリーンアップ": group__wolfCrypt.md
+      - "暗号アルゴリズム - 3DES": group__DES.md
+      - "暗号アルゴリズム - AES": group__AES.md
+      - "暗号アルゴリズム - ARC4": group__ARC4.md
+      - "暗号アルゴリズム - BLAKE2": group__BLAKE2.md
+      - "暗号アルゴリズム - Camellia": group__Camellia.md
+      - "暗号アルゴリズム - ChaCha": group__ChaCha.md
+      - "暗号アルゴリズム - ChaCha20_Poly1305": group__ChaCha20Poly1305.md
+      - "コールバック - CryptoCb": group__Crypto.md
+      - "暗号アルゴリズム - Curve25519": group__Curve25519.md
+      - "暗号アルゴリズム - Curve448": group__Curve448.md
+      - "暗号アルゴリズム - DSA": group__DSA.md
+      - "暗号アルゴリズム - Diffie-Hellman": group__Diffie-Hellman.md
+      - "暗号アルゴリズム - ECC": group__ECC.md
+      - "暗号アルゴリズム - ED25519": group__ED25519.md
+      - "暗号アルゴリズム - ED448": group__ED448.md
+      - "ECCSI API レファレンス":
+        - "ECCSI概要": group__ECCSI__Overview.md
+        - "ECCSI鍵の設定": group__ECCSI__Setup.md
+        - "ECCSI鍵による署名、検証": group__ECCSI__Operations.md
+      - "SAKKE API レファレンス":
+        - "SAKKE鍵の概要": group__SAKKE__Overview.md
+        - "SAKKE鍵の設定": group__SAKKE__Setup.md
+        - "SAKKE RSK操作": group__SAKKE__RSK.md
+        - "SAKKE 鍵操作": group__SAKKE__Operations.md
+      - "暗号アルゴリズム - HMAC": group__HMAC.md
+      - "暗号アルゴリズム - MD2": group__MD2.md
+      - "暗号アルゴリズム - MD4": group__MD4.md
+      - "暗号アルゴリズム - MD5": group__MD5.md
+      - "暗号アルゴリズム - Password Based": group__Password.md
+      - "暗号アルゴリズム - PKCS7": group__PKCS7.md
+      - "暗号アルゴリズム - PKCS11": group__PKCS11.md
+      - "暗号アルゴリズム - Poly1305": group__Poly1305.md
+      - "暗号アルゴリズム - PSA": group__PSA.md
+      - "暗号アルゴリズム - RIPEMD": group__RIPEMD.md
+      - "暗号アルゴリズム - RSA": group__RSA.md
+      - "暗号アルゴリズム - SHA 128/224/256/384/512": group__SHA.md
+      - "暗号アルゴリズム - SipHash": group__SipHash.md
+      - "暗号アルゴリズム - SRP": group__SRP.md
+    - "C. API ヘッダーファイル":
       - aes_8h.md
       - arc4_8h.md
       - asn_8h.md
@@ -135,14 +135,14 @@ nav:
       - wc__encrypt_8h.md
       - wc__port_8h.md
       - wolfio_8h.md
-    - "D. SSL/TLS Overview": appendix04.md
-    - "E. RFCs, Specifications, and Reference": appendix05.md
-    - "F. Error Codes": appendix06.md
-    - "G. Experimenting with Post-Quantum Cryptography": appendix07.md
+    - "D. SSL/TLS の概要": appendix04.md
+    - "E. RFC, 仕様および参照": appendix05.md
+    - "F. エラーコード": appendix06.md
+    - "G. ポスト量子暗号の実験": appendix07.md
 theme:
   name: null
   custom_dir: ../mkdocs-material/material
-  language: en
+  language: ja
   palette:
     primary: indigo
     accent: indigo
