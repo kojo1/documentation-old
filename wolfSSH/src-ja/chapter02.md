@@ -1,6 +1,6 @@
 #  wolfSSHのビルド
 
-wolfSSHはポータビリティを年頭において開発されているので多くのシステム上に移植するのは容易にできるはずです。ですが、もし移植上で問題がありましたら https://www.wolfssl.com/forums を参照されるか support@wolfssl.com　へ質問をお寄せください。
+wolfSSHはポータビリティを念頭において開発されているので多くのシステム上に移植するのは容易にできるはずです。ですが、もし移植上で問題がありましたら https://www.wolfssl.com/forums を参照されるか support@wolfssl.com　へ質問をお寄せください。
 
 
 この章ではwolfSSHを*nix システム（あるいはその派生システム）やWindows上でビルドする方法を説明します。また、上記以外のシステムにおいてのビルド方法のガイダンスも提供します。次章では「サンプルプログラムを使って始めてみよう」を用意しています。
@@ -112,10 +112,6 @@ wolfssl\
 
 ### Windows上でのビルドに使用するユーザーマクロ定義
 
-The solution is using user macros to indicate the location of the wolfSSL library and headers. All paths are set to the default build destinations in the wolfssl64 solution. The user macro wolfCryptDir is used as the base path for finding the libraries. It is initially set to `..\..\..\..\wolfssl`. And then, for example, the additional include directories value for the API test project is set to `$(wolfCryptDir)`.
-
-The wolfCryptDir path must be relative to the project files, which are all one directory down
-
 ソリューションではwolfSSLライブラリとヘッダーファイルのロケーションを指定するためにユーザーマクロを利用します。wolfssl64ソリューションでは全てのパスは既定のビルド出力先に設定されます。ユーザーマクロ'wolfCryptDir'はライブラリを検索するためのベースパスとして使用します。初期値として、`..\..\..\..\wolfssl`に設定されています。その後、例えば追加のインクルードファイル検索パスが追加される場合には、`$(wolfCryptDir)`に対して追加を行います。
 
 wolfCryptDirパスはプロジェクトファイルからの相対位置で表せなければなりません。
@@ -167,9 +163,7 @@ $ ./configure --host=arm-linux
 さらにコンパイラ、リンカー等も指定する必要があるでしょう：
 
 ```
-$ ./configure --host=arm-linux CC=arm-linux-gcc AR=arm-
-linux-ar
-RANLIB=arm-linux
+$ ./configure --host=arm-linux CC=arm-linux-gcc AR=arm-linux-ar RANLIB=arm-linux
 ```
 
 クロスコンパイル用にwolfSSHを正しくコンフィギュレーションできた後は、標準のautoconf作法にしたがってビルドとライブラリのインストールを行います:
@@ -191,7 +185,7 @@ $ make
 $ make install
 ```
 
-上記コマンドによってライブラリを~/wolfSSL/libに、インクルードファイルを~/wolfssl/include配置するように指定します。wolfSSHをカスタムディレクトリに配置する場合には次の様にしてください:
+上記コマンドによってライブラリを~/wolfSSL/libに、インクルードファイルを `~/wolfssl/include` に配置するように指定します。wolfSSHをカスタムディレクトリに配置する場合には次の様にしてください:
 
 
 ```
